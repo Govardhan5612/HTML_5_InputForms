@@ -31,8 +31,21 @@ function mobileNumber() {
         alert("Invalid mobile number, Enter 10 numbers");
     }
 }
+function password() {
+    /**
+     * In this method validate the password
+     */
+    let pattern = new RegExp('^[A-Za-z0-9]{8}$');
+    let input = document.getElementById("Password").value;
+    let status = pattern.test(input);
+    
+    if (!status) {
+        alert("Invalid Password, Enter 8 Characters");
+    }
+}
 function validationRules() {
     firstName();
     email();
     mobileNumber();
+    password();
 }
