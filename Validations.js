@@ -35,12 +35,12 @@ function password() {
     /**
      * In this method validate the password
      */
-    let pattern = new RegExp('^[A-Za-z0-9]{8}$');
+    let pattern = new RegExp('^[A-Za-z0-9@#$%&]{8}$');
     let input = document.getElementById("Password").value;
     let status = pattern.test(input);
-    
+
     if (!status) {
-        alert("Invalid Password, Enter 8 Characters");
+        alert("Invalid Password, Enter 8 Characters(atleast one upper case, lower case, one number, one special character)");
     }
 }
 function validationRules() {
