@@ -1,7 +1,19 @@
-html,input{
+html,input,button{
     font-family:cursive;
+    font-size: 25px;
+    border-color: darkslategray;
+    border-radius: 25px;
 }
 body {
     background-color: lightblue;
     text-align: center;
+  }
+  label{
+    text-align:inherit;
+    width: 30%;
+    margin-right: 2%;
+    color: brown;
+  }
+  input{
+    display: inline-block;
   }
