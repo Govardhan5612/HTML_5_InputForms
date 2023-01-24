@@ -38,6 +38,7 @@ function password() {
     let pattern = new RegExp('^[A-Za-z0-9]{8}$');
     let input = document.getElementById("Password").value;
     let status = pattern.test(input);
+    
     if (!status) {
         alert("Invalid Password, Enter 8 Characters");
     }
