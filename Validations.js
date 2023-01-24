@@ -20,7 +20,19 @@ function email() {
         alert("Invalid email, Eg : abc.xyz@bl.co.in");
     }
 }
+function mobileNumber() {
+    /**
+     * In this method validate the mobile number
+     */
+    let pattern = new RegExp('^[7-9]{1}[0-9]{9}$');
+    let input = document.getElementById("MobileNumber").value;
+    let status = pattern.test(input);
+    if (!status) {
+        alert("Invalid mobile number, Enter 10 numbers");
+    }
+}
 function validationRules() {
     firstName();
     email();
+    mobileNumber();
 }
